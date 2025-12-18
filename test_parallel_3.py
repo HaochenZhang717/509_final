@@ -41,11 +41,12 @@ def run_all_parallel(
     N_list=(100, 150),
     L_N_range=np.arange(3.0, 6.0, 0.2),
     num_trials=100,
-    timeout=50,
+    timeout=5,
     num_workers=None,
 ):
     if num_workers is None:
         num_workers = mp.cpu_count()
+    print("Num workers:", num_workers)
 
     results = {}
 
@@ -92,7 +93,7 @@ def run_all_parallel(
             }
 
     # save results
-    with open("dpll_results_parallel_2.json", "w") as f:
+    with open("dpll_results_parallel_3.json", "w") as f:
         json.dump(results, f, indent=2)
 
     return results

@@ -93,7 +93,7 @@ def run_all_parallel(
             }
 
     # save results
-    with open("dpll_results_parallel_3.json", "w") as f:
+    with open("dpll_results_parallel_4.json", "w") as f:
         json.dump(results, f, indent=2)
 
     return results
