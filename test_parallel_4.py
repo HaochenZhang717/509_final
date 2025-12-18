@@ -41,7 +41,7 @@ def run_all_parallel(
     N_list=(100, 150),
     L_N_range=np.arange(3.0, 6.0, 0.2),
     num_trials=100,
-    timeout=5,
+    timeout=1,
     num_workers=None,
 ):
     if num_workers is None:
